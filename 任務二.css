@@ -1,0 +1,406 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, *:before, *:after{	box-sizing: border-box;}
+body{
+    font-family: Noto Sans TC, sans-serif ;
+    line-height: 1.5;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+sub{
+	vertical-align: sub; 
+}
+.container{
+    max-width: 1088px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+@media(max-width:767px){
+    .container{
+        max-width: 767px;
+        margin: 0 auto;
+    }
+}
+.header{
+    height: 100vh;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.header-setting{
+    padding-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-setting img{
+    height: 40px;
+}
+.header-setting-btn{
+    color: #FFFFFF;
+    background-color: #FF5D50;
+    width: 128px;
+    height: 40px;
+    border-radius :22px;
+    text-align: center;
+    padding: 8px ;
+}
+.header-setting-btn:hover{
+    color: #ff5d52;
+    background-color:#FFFFFF;
+    border: #ff5d52 2px solid;
+}
+.header-banner h6{
+    color: #56C4C5;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 158px;
+}
+.header-banner h2{
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+.header-banner p{
+    font-size: 20px;
+    margin-bottom: 274px;
+}
+.header-banner img{
+    max-width: 532px;
+    height: auto;
+    vertical-align: middle;
+}
+.header-banner{
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width:767px){
+    .header{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg);
+        background-size: 334px auto;
+        background-position:center ;
+    }
+    .header-banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-banner img{
+        max-width: 304px;
+        height: auto;
+    }
+    .header-banner h2{
+        font-size: 32px;
+    }
+    .header-banner h6{
+        font-size: 16px;
+        margin-top: 32px;
+    }
+    .header-banner p{
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.platform{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.platform h3{
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 48px;
+}
+.platform-content{
+    display: flex;
+    justify-content: center;
+}
+.platform-content li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 63px;
+    padding-left: 63px;
+}
+.platform-content img{
+    max-width: 90px;
+    height: auto;
+}
+.platform-content h4{
+    color: #221E1F;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.platform-content p{
+    color: #747474;
+}
+@media(max-width:767px){
+    .platform h3{
+        margin-top: 60px;
+        margin-bottom: 32px;
+    }
+    .platform-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .platform-content img{
+        max-width: 60px;
+        height: auto;
+    }
+    .platform-content h4{
+        font-size: 18px;
+        margin-top: 16px;
+        margin-bottom: 16px
+    }
+    .platform-content p{
+        margin-bottom: 24px;
+    }
+}
+.character{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.character h3{
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 16px;
+}
+.character-card{
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+.character-card-item{
+    width: 260px;
+    height: 388px;
+    border-radius: 12 px;
+    box-shadow: 0px 2px 10px #00000014;
+    opacity: 1;
+}
+.character-card img{
+    width: 260px;
+}
+.character-card-content{
+    margin: 16px 24px 16px 16px;
+}
+.character-card h4{
+    color: #56C4C5;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.feature-intro{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.feature-intro-card{
+    display: flex;
+    flex-wrap: wrap;
+}
+.feature-intro-card-item{
+    width: 230px;
+    height: 280px;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    opacity: 1;
+    padding: 32px;
+    position: relative;
+    margin-right: 47px;
+    margin-bottom: 28px;
+}
+.feature-intro-card-item img{
+    position: absolute;
+    top: 49px;
+    left: 51px;
+    z-index: 3;
+}
+.circle{
+    width: 86px;
+    height: 86px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px #00000014;
+    opacity: 1;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    z-index: 1;
+}
+.feature-intro-card h4{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 110px;
+    margin-bottom: 16px;
+}
+
+.feature-intro-title h3{
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 165px;
+    margin-bottom: 16px;
+}
+.feature-intro-title p{
+    margin-bottom: 24px;
+}
+.feature-intro-title a{
+    width: 136px;
+    height: 49px;
+    border-radius :27px;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #56C4C5;
+    padding: 12px 32px;
+}
+.feature-intro-title a:hover{
+    color: #56C4C5;
+    background-color: #FFFFFF;
+    border: #56C4C5 2px solid;
+}
+.comment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.comment h3{
+    font-size: 32px;
+    font-weight: bold;
+}
+.comment-card img{
+    width: 80px;
+    height: 80px;
+}
+.comment-item{
+    width: 352px;
+    height: 248px;
+    padding: 48px 24px 32px 32px;
+}
+.comment-item p{
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.comment-item-title{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+
+
+
+
+
+
+
+.footer{
+    text-align: center;
+    padding-bottom: 100px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.footer h2{
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 260px;
+    padding-bottom: 48px;
+}
+.footer a{
+    width: 136px;
+    height: 49px;
+    border-radius :27px;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #56C4C5;
+    padding: 12px 32px;
+}
+.footer a:hover{
+    color: #56C4C5;
+    background-color: #FFFFFF;
+    border: #56C4C5 2px solid;
+}
+.footer-copyright{
+    background-color: #F5F5F5;
+    text-align: center;
+    padding: 16px 24px;
+}
+@media(max-width:767px){
+    .footer{
+        height: 461px;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/footer_sm.svg);
+        background-size: cover;
+    }
+    .footer h2{
+        font-size: 24px;
+        padding-top: 293px;
+        padding-bottom: 24px;
+    }
+}
