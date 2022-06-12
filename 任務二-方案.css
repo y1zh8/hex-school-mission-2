@@ -1,0 +1,360 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, *:before, *:after{	box-sizing: border-box;}
+body{
+    font-family: Noto Sans TC, sans-serif ;
+    line-height: 1.5;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+sub{
+	vertical-align: sub; 
+}
+.container{
+    max-width: 1088px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+h2{
+    font-size: 48px;
+    font-weight: bold;
+}
+h3{
+    font-size: 32px;
+    font-weight: bold;
+}
+h4{
+    font-size: 24px;
+    font-weight: bold;
+}
+@media(max-width:767px){
+    .container{
+        max-width: 767px;
+        margin: 0 auto;
+    }
+}
+.header{
+    position: relative;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.header-setting{
+    padding-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-setting img{
+    height: 40px;
+}
+.header-setting-btn{
+    color: #FFFFFF;
+    background-color: #FF5D50;
+    width: 128px;
+    height: 40px;
+    border-radius :22px;
+    text-align: center;
+    padding: 8px ;
+}
+.header-setting-btn:hover{
+    color: #ff5d52;
+    background-color:#FFFFFF;
+    border: #ff5d52 2px solid;
+}
+.header-banner h6{
+    color: #56C4C5;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 158px;
+}
+.header-banner h2{
+    margin-top: 92px;
+    margin-bottom: 16px;
+}
+.header-banner p{
+    font-size: 20px;
+    margin-bottom: 269px;
+}
+.header-banner img{
+    max-width: 532px;
+    height: auto;
+    vertical-align: middle;
+}
+.header-banner{
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width:767px){
+    .header{
+
+        background-size: 80%;
+    }
+    .header-banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-banner h2{
+        font-size: 32px;
+    }
+    .header-banner h6{
+        font-size: 16px;
+        margin-top: 32px;
+    }
+    .header-banner p{
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+}
+
+/*方案*/
+
+.plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 11px;
+}
+.plan-number{
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    margin-bottom: 54px;
+}
+.plan-number a{
+    width: 130px;
+    height: 50px;
+    font-size: 18px;
+    color: #56C4C5;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+    text-align: center;
+    padding: 12px 32px;
+    margin: 8px;
+}
+.plan-number a:hover{
+    color: #FFFFFF;
+    background-color: #56C4C5;
+}
+@media(max-width:767px){
+    .plan{
+        margin: 0 auto;
+    }
+    .plan-number{
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+    .plan-number a{
+        width: 90px;
+        height: 40px;
+        font-size: 16px;
+        padding: 8px 16px;
+        margin: 6px;
+    }
+
+}
+/*方案卡片*/
+.plan-card-two{
+    display: flex;
+}
+.plan-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 444px;
+    margin: 10px;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    padding: 16px 24px;
+}
+.plan-card h4{
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding-bottom: 12px;
+    margin-bottom: 36px;
+}
+.plan-card p{
+    text-align: center;
+}
+.plan-card-membernfee{
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+}
+.plan-card-member{
+    width: 169px;
+    height: 108px;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    padding: 24px 32px;
+    margin: 10px;
+}
+.plan-card-member p{
+    font-size: 12px;
+}
+.plan-card-member-number{
+    display: flex;
+    align-items: baseline;
+}
+.plan-card-member-number h5{
+    font-size: 32px;
+    color: #56C4C5;
+    margin-right: 8px;
+}
+.plan-card-member-number p{
+    color: #56C4C5;
+}
+.plan-card-member-fee{
+    display: flex;
+    align-items: baseline;
+}
+.plan-card-member-fee h5{
+    font-size: 32px;
+    margin-right: 8px;
+}
+.plan-card-list{
+    margin-bottom: 24px;
+}
+.plan-card-list li{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.plan-card-list-item{
+    display: flex;
+    align-items: center;
+}
+.plan-card-list-item img{
+    width: 20px;
+    height: 16px;
+    margin-right: 12px;
+}
+.plan-card a{
+    width: 136px;
+    height: 49px;
+    color: #FFFFFF;
+    background-color: #56C4C5;
+    border-radius: 27px;
+    text-align: center;
+    padding: 12px 32px;
+
+}
+.plan-card a:hover{
+    color: #56C4C5;
+    background-color:#FFFFFF ;
+    border: 1px solid #56C4C5;
+}
+@media(max-width:767px){
+    .plan-card-two{
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/*常見問題*/
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+}
+.faq h3{
+    text-align: center;
+    margin-bottom: 48px;
+}
+.faq a:hover{
+    color: #56C4C5;
+    font-weight: bold;
+}
+.faq-q{
+
+    height: 58px;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    padding: 16px 32px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.faq-q:hover{
+    color: #56C4C5;
+    font-weight: bold;
+}
+.faq-q-c{
+    width: 904px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media(max-width:767px){
+    .faq-q{
+        max-width: 334px;
+        height: 56px;
+    }
+}
+
+
+
+
+
+.footer-copyright{
+    background-color: #F5F5F5;
+    text-align: center;
+    padding: 16px 24px;
+}
